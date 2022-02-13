@@ -8,8 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-popper": "^2.2.5",
+    "react-tooltip": "^4.2.21"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",

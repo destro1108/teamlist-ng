@@ -1,22 +1,63 @@
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import data from "./static/data.json";
+import ProfileComponent from "./components/ProfileComponent";
+import { Place } from "react-tooltip";
+
+function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+  return size;
+}
 
 function App() {
-  console.log(data);
-
+  const [width] = useWindowSize();
+  const [active, setActive] = useState("");
+  const handleMouse = (val: string) => {
+    setActive(val);
+  };
+  const getDir = (inx: number): Place[] => {
+    if (width < 768) {
+      return ["bottom", (inx + 1) % 2 == 0 ? "right" : "left"];
+    } else if (width >= 768 && width < 1024) {
+      if ((inx + 1) % 3 === 0) return ["left", "bottom"];
+      if ((inx + 1) % 3 === 1) return ["right", "bottom"];
+      return ["bottom", "bottom"];
+    }
+    if ((inx + 1) % 4 === 1) return ["right", "bottom"];
+    else if ((inx + 1) % 4 === 0) return ["left", "bottom"];
+    return ["bottom", "bottom"];
+  };
   return (
-    <div className="min-h-screen w-full flex flex-col bg-gray-800 text-gray-50">
+    <div className="min-h-screen w-full flex flex-col bg-gray-200 text-gray-800">
       <header className="flex h-20 items-center justify-center container mx-auto">
         <p className="text-2xl">Interview Project - User List</p>
       </header>
-      <main className="flex-1 flex items-center justify-center container mx-auto">
+      <main className="container mx-auto relative">
+        {/* <ProfileComponent data={data[0]} />
+        <ProfileComponent data={data[0]} /> */}
         <div
-          className="flex flex-col items-center gap-2 px-2 py-1"
-          data-tooltip-target="tooltip-top"
-          data-tooltip-placement="top"
-        >
-          <img src={data[0].imageUrl} className="rounded-full" />
-          <p>{data[0].name}</p>
+          className={`min-h-full w-full absolute top-0 bg-white bg-opacity-40 z-10 ${
+            active === "" ? "invisible" : "visible"
+          }`}
+        ></div>
+
+        <div className="grid  grid-cols-2 px-2 py-2 place-items-center md:grid-cols-3 lg:grid-cols-4 items-baseline">
+          {data.map((el, inx) => (
+            <ProfileComponent
+              key={el.id}
+              data={el}
+              handleMouse={handleMouse}
+              direction={getDir(inx)}
+              active={active}
+            />
+          ))}
         </div>
       </main>
     </div>

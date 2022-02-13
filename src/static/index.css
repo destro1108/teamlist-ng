@@ -10,3 +10,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.toolTip-Theme {
+  background: transparent;
+  color: #ff6e00 !important;
+  background-color: transparent !important;
+}
+.toolTip-Theme:hover {
+  opacity: 0;
+}
