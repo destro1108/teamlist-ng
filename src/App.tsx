@@ -47,7 +47,7 @@ function App() {
       </header>
       <main className="container mx-auto relative">
         <div
-          className={`min-h-full w-full absolute top-0 bg-white bg-opacity-40 z-10 ${
+          className={`min-h-full w-full absolute top-0 bg-white bg-opacity-40 z-10 transition ease-in-out ${
             active === "" ? "invisible" : "visible"
           }`}
         ></div>
