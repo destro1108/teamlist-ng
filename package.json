@@ -1,6 +1,7 @@
 {
   "name": "ip-userlist",
   "private": true,
+  "homepage": "/teamlist-ng/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
