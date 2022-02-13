@@ -18,27 +18,6 @@ interface Props {
   handleMouse: (val: string) => void;
 }
 
-// const TooltipContent = ({
-//   name,
-//   description,
-// }: {
-//   name: string;
-//   description: string;
-// }) => {
-//   return (
-//     <div className="border-2 border-red-600 rounded-lg px-4 py-4 bg-gray-100">
-//       <div className="flex pt-1 pb-3">
-//         <p className="pt-1">{name}</p>
-//         <div className="flex gap-3 pl-6">
-//           <img src={linkedin} className="h-8 cursor-pointer" />
-//           <img src={twitter} className="h-8 cursor-pointer" />
-//         </div>
-//       </div>
-//       <p className="w-80">{description}</p>
-//     </div>
-//   );
-// };
-
 const ProfileComponent = ({ data, direction, handleMouse, active }: Props) => {
   const { id, name, imageUrl, email, position, description } = data;
   const [refElement, setRefElement] = React.useState<HTMLDivElement | null>(
