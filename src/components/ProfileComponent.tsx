@@ -57,7 +57,7 @@ const ProfileComponent = ({ data, direction, handleMouse, active }: Props) => {
     >
       <img
         src={imageUrl}
-        className="rounded-full h-28 mb-1 border-red-600 group-hover:border-2 z-0"
+        className="rounded-full h-28 mb-1 border-red-600 group-focus:border-2 group-hover:border-2 z-0"
       />
       {/* group-hover:opacity-100 group-hover:border-2 */}
       <p className="mt-1 text-xl font-semibold group-hover:text-gray-800  transition-all">
