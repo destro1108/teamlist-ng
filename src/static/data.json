@@ -33,11 +33,11 @@
   },
   {
     "id": "d9aa7ccb-bbb2-451b-a524-d0a82a3a7772",
-    "name": "آرمین علیزاده",
+    "name": "Armaan Ali",
     "position": "CEO",
     "imageUrl": "https://randomuser.me/api/portraits/men/64.jpg",
-    "email": "armyn.aalyzdh@example.com",
-    "description": "A NavGurukul Alumnus, آرمین completed BCA from Sant Singaji Institute of Science & Management."
+    "email": "armaan.ali@example.com",
+    "description": "A NavGurukul Alumnus, Armaan completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
     "id": "c3917e2a-9b31-4654-824d-db5b002580a1",
@@ -57,11 +57,11 @@
   },
   {
     "id": "72eca2aa-51ce-4773-b998-54e1d5b63dc9",
-    "name": "کیانا حیدری",
+    "name": "Nora Mahrez",
     "imageUrl": "https://randomuser.me/api/portraits/women/3.jpg",
-    "email": "khyn.hydry@example.com",
+    "email": "nora.mahrez@example.com",
     "position": "CEO",
-    "description": "A NavGurukul Alumnus, کیانا completed BCA from Sant Singaji Institute of Science & Management."
+    "description": "A NavGurukul Alumnus, Nora completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
     "id": "6de69fb1-f616-4aba-8e71-340d554dc066",

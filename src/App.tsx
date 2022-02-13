@@ -35,20 +35,24 @@ function App() {
     return ["bottom", "bottom"];
   };
   return (
-    <div className="min-h-screen w-full flex flex-col bg-gray-200 text-gray-800">
-      <header className="flex h-20 items-center justify-center container mx-auto">
-        <p className="text-2xl">Interview Project - User List</p>
+    <div
+      className={`min-h-screen w-full flex flex-col bg-gray-200 text-gray-800 ${
+        active === "" ? "" : "bg-white bg-opacity-40 "
+      }`}
+    >
+      <header className="flex items-center justify-center container mx-auto">
+        <h2 className="text-4xl font-semibold py-12">
+          Interview Project - User List
+        </h2>
       </header>
       <main className="container mx-auto relative">
-        {/* <ProfileComponent data={data[0]} />
-        <ProfileComponent data={data[0]} /> */}
         <div
           className={`min-h-full w-full absolute top-0 bg-white bg-opacity-40 z-10 ${
             active === "" ? "invisible" : "visible"
           }`}
         ></div>
 
-        <div className="grid  grid-cols-2 px-2 py-2 place-items-center md:grid-cols-3 lg:grid-cols-4 items-baseline">
+        <div className="grid grid-cols-2 px-10 py-2 place-items-center md:grid-cols-3 lg:grid-cols-4 items-baseline">
           {data.map((el, inx) => (
             <ProfileComponent
               key={el.id}
