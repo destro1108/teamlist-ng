@@ -41,7 +41,7 @@ function App() {
       }`}
     >
       <header className="flex items-center justify-center container mx-auto">
-        <h2 className="text-4xl font-semibold py-12">
+        <h2 className="text-4xl font-semibold py-10">
           Interview Project - User List
         </h2>
       </header>
@@ -52,7 +52,7 @@ function App() {
           }`}
         ></div>
 
-        <div className="grid grid-cols-2 px-10 py-2 place-items-center md:grid-cols-3 lg:grid-cols-4 items-baseline">
+        <div className="px-10 py-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 place-items-center items-baseline">
           {data.map((el, inx) => (
             <ProfileComponent
               key={el.id}
