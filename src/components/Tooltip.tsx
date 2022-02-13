@@ -29,7 +29,7 @@ const Tooltip = ({ direction, profile }: TooltipProps) => {
       className="toolTip-Theme opacity-100 z-20 pointer-events-auto"
     >
       <div
-        className={`border-2 border-red-600 rounded-lg px-4 py-2 bg-gray-100 bg-opacity-100 text-black flex flex-col ${
+        className={`flex flex-col px-4 py-2 bg-gray-100 bg-opacity-100 text-black rounded-lg border-2 border-red-600 shadow-md shadow-gray-800 ${
           direction[1] == "right" ? "items-end" : ""
         }`}
       >
