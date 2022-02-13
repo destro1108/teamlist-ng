@@ -12,7 +12,7 @@
     "name": "Hannah Ellis",
     "imageUrl": "https://randomuser.me/api/portraits/women/92.jpg",
     "email": "hannah.ellis@example.com",
-    "position": "CEO",
+    "position": "CFO",
     "description": "A NavGurukul Alumnus, Hannah completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -20,7 +20,7 @@
     "name": "Lea Jean-Baptiste",
     "imageUrl": "https://randomuser.me/api/portraits/women/79.jpg",
     "email": "lea.jean-baptiste@example.com",
-    "position": "CEO",
+    "position": "CTO",
     "description": "A NavGurukul Alumnus, Lea completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -28,13 +28,13 @@
     "name": "Ivana Joly",
     "imageUrl": "https://randomuser.me/api/portraits/women/29.jpg",
     "email": "ivana.joly@example.com",
-    "position": "CEO",
+    "position": "CMO",
     "description": "A NavGurukul Alumnus, Ivana completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
     "id": "d9aa7ccb-bbb2-451b-a524-d0a82a3a7772",
     "name": "Armaan Ali",
-    "position": "CEO",
+    "position": "CLO",
     "imageUrl": "https://randomuser.me/api/portraits/men/64.jpg",
     "email": "armaan.ali@example.com",
     "description": "A NavGurukul Alumnus, Armaan completed BCA from Sant Singaji Institute of Science & Management."
@@ -44,7 +44,7 @@
     "name": "Johanne Jensen",
     "imageUrl": "https://randomuser.me/api/portraits/women/86.jpg",
     "email": "johanne.jensen@example.com",
-    "position": "CEO",
+    "position": "General Manager",
     "description": "A NavGurukul Alumnus, Johanne completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -52,7 +52,7 @@
     "name": "Diane Lane",
     "imageUrl": "https://randomuser.me/api/portraits/women/7.jpg",
     "email": "diane.lane@example.com",
-    "position": "CEO",
+    "position": "Product Manager",
     "description": "A NavGurukul Alumnus, Diane completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -60,7 +60,7 @@
     "name": "Nora Mahrez",
     "imageUrl": "https://randomuser.me/api/portraits/women/3.jpg",
     "email": "nora.mahrez@example.com",
-    "position": "CEO",
+    "position": "Product Manager",
     "description": "A NavGurukul Alumnus, Nora completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -68,7 +68,7 @@
     "name": "Andrea Pastor",
     "imageUrl": "https://randomuser.me/api/portraits/women/54.jpg",
     "email": "andrea.pastor@example.com",
-    "position": "CEO",
+    "position": "Team Lead",
     "description": "A NavGurukul Alumnus, Andrea completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -76,7 +76,7 @@
     "name": "Daniel Foster",
     "imageUrl": "https://randomuser.me/api/portraits/men/0.jpg",
     "email": "daniel.foster@example.com",
-    "position": "CEO",
+    "position": "Frontend Engineer",
     "description": "A NavGurukul Alumnus, Daniel completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -84,7 +84,7 @@
     "name": "Tristan Giraud",
     "imageUrl": "https://randomuser.me/api/portraits/men/68.jpg",
     "email": "tristan.giraud@example.com",
-    "position": "CEO",
+    "position": "Frontend Engineer",
     "description": "A NavGurukul Alumnus, Tristan completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -92,7 +92,7 @@
     "name": "Mary-Ann Beekhof",
     "imageUrl": "https://randomuser.me/api/portraits/women/72.jpg",
     "email": "mary-ann.beekhof@example.com",
-    "position": "CEO",
+    "position": "UI/UX Developer ",
     "description": "A NavGurukul Alumnus, Mary-Ann completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -100,7 +100,7 @@
     "name": "Daniel Mitchell",
     "imageUrl": "https://randomuser.me/api/portraits/men/56.jpg",
     "email": "daniel.mitchell@example.com",
-    "position": "CEO",
+    "position": "Backend Engineer",
     "description": "A NavGurukul Alumnus, Daniel completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -108,7 +108,7 @@
     "name": "Elger Leeftink",
     "imageUrl": "https://randomuser.me/api/portraits/men/37.jpg",
     "email": "elger.leeftink@example.com",
-    "position": "CEO",
+    "position": "Backend Engineer",
     "description": "A NavGurukul Alumnus, Elger completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -116,7 +116,7 @@
     "name": "Bernice Moore",
     "imageUrl": "https://randomuser.me/api/portraits/women/34.jpg",
     "email": "bernice.moore@example.com",
-    "position": "CEO",
+    "position": "Frontend Intern",
     "description": "A NavGurukul Alumnus, Bernice completed BCA from Sant Singaji Institute of Science & Management."
   },
   {
@@ -124,7 +124,7 @@
     "name": "Ilona Autio",
     "imageUrl": "https://randomuser.me/api/portraits/women/57.jpg",
     "email": "ilona.autio@example.com",
-    "position": "CEO",
+    "position": "Backend Intern",
     "description": "A NavGurukul Alumnus, Ilona completed BCA from Sant Singaji Institute of Science & Management."
   }
 ]

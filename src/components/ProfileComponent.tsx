@@ -60,7 +60,7 @@ const ProfileComponent = ({ data, direction, handleMouse, active }: Props) => {
         className="rounded-full h-28 mb-1 border-red-600 group-focus:border-2 group-hover:border-2 z-0"
       />
       {/* group-hover:opacity-100 group-hover:border-2 */}
-      <p className="mt-1 text-xl font-semibold group-hover:text-gray-800  transition-all">
+      <p className="mt-1 text-xl text-center font-semibold group-hover:text-gray-800  transition-all">
         {name}
       </p>
       <p className="font-normal group-hover:text-gray-700  transition-all">
