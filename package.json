@@ -1,7 +1,7 @@
 {
   "name": "ip-userlist",
   "private": true,
-  "homepage": "/teamlist-ng/",
+  "homepage": "https://destro1108.github.io/teamlist-ng/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
