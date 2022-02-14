@@ -32,6 +32,7 @@ const ProfileComponent = ({ data, direction, handleMouse, active }: Props) => {
     >
       <img
         src={imageUrl}
+        alt={`dp_${name}`}
         className="h-28 mb-1 rounded-full border-red-600 group-focus:border-2 group-hover:border-2 z-0 shadow-md shadow-gray-800"
       />
       <p className="mt-1 text-xl text-center font-semibold group-hover:text-gray-800 transition-all">

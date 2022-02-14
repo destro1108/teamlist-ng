@@ -46,6 +46,7 @@ const App = () => {
         </h2>
       </header>
       <main className="relative container mx-auto ">
+        {/* Backdrop Component to blur non-hovered content */}
         <div
           className={`min-h-full w-full bg-white bg-opacity-40 z-10 absolute top-0 transition ease-in-out ${
             active === "" ? "invisible" : "visible"
