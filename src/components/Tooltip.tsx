@@ -16,6 +16,7 @@ const Tooltip = ({ direction, profile }: TooltipProps) => {
       delayShow={100}
       place={direction[0]}
       overridePosition={({ left, top }, currentEvent, currentTarget, node) => {
+        // To make the tooltip flip if it going out of viewport
         if (!node) return { left, top };
         const d = document.documentElement;
         left = Math.min(d.clientWidth - node.clientWidth, left);
@@ -42,7 +43,7 @@ const Tooltip = ({ direction, profile }: TooltipProps) => {
             <p className="text-lg font-semibold">{name}</p>
             <p className="text-base">{email}</p>
           </div>
-          <div className="  flex gap-3 pl-6 text-red-600">
+          <div className="flex gap-3 pl-6 text-red-600">
             <a
               href="https://linkedin.com"
               rel="noreferrer noopener"

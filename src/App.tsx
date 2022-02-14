@@ -3,7 +3,7 @@ import data from "./static/data.json";
 import ProfileComponent from "./components/ProfileComponent";
 import { Place } from "react-tooltip";
 
-function useWindowSize() {
+const useWindowSize = () => {
   const [size, setSize] = useState([0, 0]);
   useLayoutEffect(() => {
     function updateSize() {
@@ -14,9 +14,9 @@ function useWindowSize() {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
   return size;
-}
+};
 
-function App() {
+const App = () => {
   const [width] = useWindowSize();
   const [active, setActive] = useState("");
   const handleMouse = (val: string) => {
@@ -36,23 +36,23 @@ function App() {
   };
   return (
     <div
-      className={`min-h-screen w-full flex flex-col bg-gray-200 text-gray-800 ${
+      className={`flex flex-col min-h-screen w-full bg-gray-200 text-gray-800 ${
         active === "" ? "" : "bg-white bg-opacity-40 "
       }`}
     >
       <header className="flex items-center justify-center container mx-auto">
         <h2 className="text-4xl font-semibold py-10">
-          Interview Project - User List
+          Interview Project - Team List
         </h2>
       </header>
-      <main className="container mx-auto relative">
+      <main className="relative container mx-auto ">
         <div
-          className={`min-h-full w-full absolute top-0 bg-white bg-opacity-40 z-10 transition ease-in-out ${
+          className={`min-h-full w-full bg-white bg-opacity-40 z-10 absolute top-0 transition ease-in-out ${
             active === "" ? "invisible" : "visible"
           }`}
         ></div>
 
-        <div className="px-10 py-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-6 place-items-center items-baseline">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-10 py-2 gap-y-6 place-items-center items-baseline">
           {data.map((el, inx) => (
             <ProfileComponent
               key={el.id}
@@ -66,6 +66,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;
